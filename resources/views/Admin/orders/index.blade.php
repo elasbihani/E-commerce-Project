@@ -12,7 +12,7 @@
                         </h4>
                     </div>
                     <div class="card-body table-responsive">
-                        <table class="table  align-middle text-center">
+                        <table id="myTable" class="table  align-middle text-center">
                             <thead>
                                 <tr>
                                     <th>Tracking Number</th>
@@ -27,7 +27,7 @@
                                         <td> {{$item->tracking_no}} </td>
                                         <td> {{$item->total_price}} </td>
                                         <td> {{$item->status == '0' ? "Pending" : "Completed"}} </td>
-                                        <td>    
+                                        <td>
                                             <a href="{{url("admin/view-order/".$item->id)}}" class="btn btn-primary">View</a>
                                         </td>
                                     </tr>

@@ -1,3 +1,4 @@
+
 @extends('layouts.customer')
 
 
@@ -6,57 +7,65 @@
 @endsection
 
 @section('content')
-    @include('layouts.inc.IntroVideo')
+    @include('layouts.inc.intro')
     <div class="py-2">
         <div class="container  d-flex align-items-center justify-content-around p-4">
-            <div class="border border-dark " style="width:20rem; background:black;"></div>
-            <h3 style="font-size: ; font-weight:bolder; padding:5px;">Top Categories</h3>
-            <div class="border border-dark " style="width:20rem; background:black;"></div>
+            <div class="triangleright shape"  data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"  ></div>
+            <h3 style="font-size: ; font-weight:bolder; padding:5px;"data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">Top Categories</h3>
+            <div class="triangleleft shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false" ></div>
         </div>
     </div>
     <div class="py-5">
         <div class="container">
             <div class="row">
-               
-                    <a  href="{{url('/category')}}" class="card col-md-4 " style="border:none;">
+
+                    <a  href="{{url('/category')}}" class="card cat col-md-3 " style="border:none;" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                         <div class="card-body zoom postion-relative">
-                            <img src="{{asset('images/accessories.jpg')}}"  class="w-100 lazy rounded" height="200px"   alt="">
+                            <img src="{{asset('images/fitness.webp')}}"  class="w-100 lazy rounded img-cat " height="200px"   alt="">
                             <div class="text-light position-absolute top-50 start-50 translate-middle">
-                                <h4 style="letter-spacing:3px; ">ACCESSORIES</h4>
+                                <h4 style="letter-spacing:3px; ">FITNESS</h4>
                             </div>
                         </div>
                     </a>
-                    <a href="{{url('/category')}}"   class="card col-md-4 " style="border:none;">
+                    <a href="{{url('/category')}}"   class="card cat col-md-3 " style="border:none;" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                         <div class="card-body zoom postion-relative">
-                            <img src="{{asset('images/equipments.jpg')}}"  class="w-100 lazy rounded" height="200px"  alt="">
+                            <img src="{{asset('images/streetWorkout.webp')}}"  class="w-100 lazy rounded img-cat" height="200px"  alt="">
                             <div class="text-light position-absolute top-50 start-50 translate-middle">
-                                <h4 style="letter-spacing:3px; ">EQUIPMENTS</h4>
+                                <h4 style="letter-spacing:3px; ">STREET WORKOUT</h4>
                             </div>
                         </div>
                     </a>
-                    <a href="{{url('/category')}}" class="card col-md-4 " style="border:none;">
+                    <a href="{{url('/category')}}" class="card cat col-md-3" style="border:none;" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                         <div class="card-body zoom postion-relative">
-                            <img src="{{asset('images/supplements.jpg')}}"  class="w-100 lazy rounded" height="200px"  alt="">
+                            <img src="{{asset('images/pack.webp')}}"  class="w-100 lazy rounded img-cat" height="200px"  alt="">
                             <div class="text-light position-absolute top-50 start-50 translate-middle">
-                                <h4 style="letter-spacing:3px; ">SUPPLEMENTS</h4>
+                                <h4 style="letter-spacing:3px; ">CLOTHES</h4>
                             </div>
                         </div>
                     </a>
-                
+                    <a href="{{url('/category')}}" class="card cat col-md-3 " style="border:none;" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
+                        <div class="card-body zoom postion-relative">
+                            <img src="{{asset('images/pack.webp')}}"  class="w-100 lazy rounded img-cat" height="200px"  alt="">
+                            <div class="text-light position-absolute top-50 start-50 translate-middle">
+                                <h4 style="letter-spacing:3px; ">PACKAGES</h4>
+                            </div>
+                        </div>
+                    </a>
+
             </div>
         </div>
     </div>
-    
+
     <div class="container  d-flex align-items-center justify-content-around p-4">
-        <div class="border border-dark " style="width:20rem; background:black;"></div>
-        <h3 style="font-size: ; font-weight:bolder; padding:5px;">NEW ARRIVALS</h3>
-        <div class="border border-dark " style="width:20rem; background:black;"></div>
+        <div class="triangleright shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false" ></div>
+        <h3 style="font-size: ; font-weight:bolder; padding:5px;" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">NEW ARRIVALS</h3>
+        <div class="triangleleft shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false" ></div>
     </div>
     <div class="py-5" id="products">
         <div class="container">
             <div class="row d-flex flex-wrap">
                 @foreach ($product as $item )
-                <div class="col-md-3 mt-2">
+                <div class="col-md-3 mt-2" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                              <a  class="link-dark"  href="{{url(asset('view-product/'.$item->slug))}}">
                             <div class="card hello-card" style="width: 18rem;">
                                 <img src="{{asset('upload/product/'.$item->image)}}" class="card-img-top" alt="...">
@@ -72,6 +81,15 @@
             </div>
         </div>
     </div>
+    <div class="py-2">
+        <div class="container  d-flex align-items-center justify-content-around p-4">
+            <div class=" triangleright shape"  data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"  ></div>
+            <h3 style="font-size: ; font-weight:bolder; padding:5px;"data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">SPONSOR</h3>
+            <div class="triangleleft shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false" ></div>
+        </div>
+    </div>
+
+    
 @endsection
 
 
@@ -112,16 +130,16 @@
 @endsection
 @section('css')
   <style>
-    
+
     .owl-nav
     {
-        display: block !important; 
+        display: block !important;
     }
     .owl-nav button
     {
         font-size: 2rem !important;
     }
-  
+
 
   </style>
 

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use Illuminate\Http\Request; 
 use Illuminate\support\Facades\Auth;
 use App\Models\Order;
 
@@ -22,5 +22,5 @@ class UserController extends Controller
     }
 
 
-   
+
 }

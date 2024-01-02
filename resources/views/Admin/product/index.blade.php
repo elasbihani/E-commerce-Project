@@ -8,7 +8,7 @@
         <h4>Product Page</h4>
     </div>
     <div class="card-body table-responsive">
-        <table class="table table-striped table-fixed table-hover align-middle text-center">
+        <table id="myTable" class="table table-striped table-fixed table-hover align-middle text-center">
             <thead class="table-dark">
                 <tr>
                     <th>Id</th>
@@ -20,7 +20,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($products as $item)    
+                @foreach ($products as $item)
                 <tr>
                     <td >{{$item->id}}</td>
                     <td >{{$item->category->name}}</td>

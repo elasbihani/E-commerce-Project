@@ -15,6 +15,8 @@ use App\Http\Controllers\frontend\UserController;
 use App\Http\Controllers\frontend\contactComplains;
 use Illuminate\support\Facades\Mail;
 use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,6 +41,7 @@ Route::get('view-product/{prod_slug}',[FrontController::class ,  'eachProdView']
 
 
 Auth::routes(['verify' => true]);
+
 
 Route::get('/email', function(){
     Mail::to('mrmoiz1.dev@gmail.com')->send(new WelcomeMail());
@@ -86,8 +89,8 @@ Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('edit-category/{id}',[CategoriesController::class , 'edit']);
     Route::put('update-category/{id}',[CategoriesController::class , 'update']);
     Route::get('delete-category/{id}',[CategoriesController::class , 'delete']);
-    
-    
+
+
     // Product Routes
     Route::get('/products','App\Http\Controllers\Admin\ProductController@index');
     Route::get('/add-product','App\Http\Controllers\Admin\ProductController@add');
@@ -97,16 +100,16 @@ Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('delete-product/{id}',[ProductController::class , 'delete']);
     Route::put('update-order/{id}',[UserController::class , 'updateOrder']);
 
-    
+
     Route::get('orders',[OrderController::class, 'index']);
     Route::get('admin/view-order/{id}',[OrderController::class, 'view']);
     Route::put('update-order/{id}',[OrderController::class , 'updateOrder']);
     Route::get('order-history',[OrderController::class , 'orderHistory']);
-    
+
     Route::get('users',[DashboardController::class, 'users']);
     Route::get('view-user/{id}',[DashboardController::class, 'viewUser']);
-    
-    
+
+
     Route::get('message',[contactComplains::class, 'viewcomplains']);
 });
 

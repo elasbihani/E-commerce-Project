@@ -19,10 +19,15 @@
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         a matter of hours to help you.</p>
 
-    <div class="row">
+    <div class="container form-contact">
+
+
+        <div class="container-fluid mb-md-0 mb-5">
+            <div id="map"></div>
+        </div>  
 
         <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
+        <div class="container-fluid mb-md-0 mb-5">
             <form id="contact-form" name="contact-form" >
                 <!--Grid row-->
                 <div class="row">
@@ -84,18 +89,18 @@
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-md-3 text-center">
+        <div class=" container-fluid text-center lien-contact">
             <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Wah Cantt, CA 94126, PAKISTAN</p>
+                    <p>MARRAKECH ,Hay Annahda II</p>
                 </li>
 
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 92 313 5473241</p>
+                    <p>+ 212 735 4559</p>
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>mrmoiz.dev@gmail.com</p>
+                    <p>ENEGRIP@gmail.com</p>
                 </li>
             </ul>
         </div>
@@ -108,7 +113,7 @@
 </div>
 <div class="py-5"></div>
 
-    
+
 @endsection
 
 @section('scripts')

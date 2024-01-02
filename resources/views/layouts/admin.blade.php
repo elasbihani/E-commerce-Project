@@ -10,16 +10,19 @@
 
 
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 
     <link href="{{ asset('assets/css/material-dashboard.css?v=3.0.4')}}" rel="stylesheet">
     <link href="{{ asset('assets/css/nucleo-icons.css')}}" rel="stylesheet">
     <link href="{{ asset('assets/css/nucleo-svg.css')}}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css')}}" rel="stylesheet">
+
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
     <script>
       var ctx = document.getElementById("chart-bars").getContext("2d");
-  
+
       new Chart(ctx, {
         type: "bar",
         data: {
@@ -97,10 +100,10 @@
           },
         },
       });
-  
-  
+
+
       var ctx2 = document.getElementById("chart-line").getContext("2d");
-  
+
       new Chart(ctx2, {
         type: "line",
         data: {
@@ -119,7 +122,7 @@
             fill: true,
             data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
             maxBarThickness: 6
-  
+
           }],
         },
         options: {
@@ -181,9 +184,9 @@
           },
         },
       });
-  
+
       var ctx3 = document.getElementById("chart-line-tasks").getContext("2d");
-  
+
       new Chart(ctx3, {
         type: "line",
         data: {
@@ -201,7 +204,7 @@
             fill: true,
             data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
             maxBarThickness: 6
-  
+
           }],
         },
         options: {
@@ -275,14 +278,14 @@
   @include('layouts.inc.settings')
   @yield('css')
   @yield('scripts')
- 
- 
+
+
     <script src="{{asset('assets/js/plugins/chartjs.min.js')}}" defer></script>
     <script src="{{asset('assets/js/plugins/smooth-scrollbar.min.js')}}" defer></script>
     <script src="{{asset('assets/js/plugins/perfect-scrollbar.min.js')}}" defer></script>
     <script src="{{asset('assets/js/core/bootstrap.min.js')}}" defer></script>
     <script src="{{asset('assets/js/core/popper.min.js')}}" defer></script>
-    
+
     <script>
       var win = navigator.platform.indexOf('Win') > -1;
       if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -295,7 +298,7 @@
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-    
+
     <script src="{{asset('assets/js/material-dashboard.min.js?v=3.0.4')}}" defer></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     @if (session('status'))
@@ -303,5 +306,14 @@
       swal("Done!", "{{session('status')}}", "success");
     </script>
     @endif
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('#myTable').DataTable();
+        });
+    </script>
+
 </body>
 </html>

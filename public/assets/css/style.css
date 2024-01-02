@@ -1,0 +1,26 @@
+.bg-gradient-primary
+{
+   background-image:  linear-gradient(195deg, #7BD54A 0%, #7BD54A 100%);
+   box-shadow: #7BD54A  ;
+}
+
+.sidenav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.5rem;
+}
+
+.btn-primary{
+   background-color:  #7BD54A;
+}
+
+.btn-primary:hover{
+    background-color:  #5ee017;
+ }
+
+
+.navbar-vertical .navbar-brand>img, .navbar-vertical .navbar-brand-img {
+    /* min-width:  4rem !important;
+    min-height: 2rem !important; */
+}

@@ -2,15 +2,174 @@
 
 
 @section('title')
-   Pain & Gain
+    Pain & Gain
 @endsection
 
 
 @section('content')
-<div class="py-5"></div>
-<div class="container p-2 my-2">
-        <h1 class="p-2">OFFICIAL PAIN & GAIN E-COMMERCE PLATFORM</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus quidem corrupti excepturi odio ullam possimus perspiciatis quia culpa, cumque labore ipsum cum consequatur similique obcaecati porro, harum nobis repudiandae eos, distinctio aut sequi adipisci id magnam! Sunt quidem quas nesciunt explicabo, itaque quae libero maxime similique aliquam optio reprehenderit consequuntur magni molestiae aspernatur magnam recusandae at repellat, aliquid hic, neque corrupti soluta numquam! Molestias eveniet quos recusandae! Molestias, ut possimus voluptatum quas ducimus adipisci iure alias corporis odit suscipit distinctio. Provident dolorem iure, libero sapiente aliquid adipisci magnam, nemo aliquam iusto laboriosam quo ut laudantium natus saepe voluptas veritatis quas ratione nobis vitae, itaque incidunt possimus ullam! Dolorum culpa sit nobis dolor, dicta rem labore hic. Impedit perferendis, minima, fuga animi deserunt dignissimos error totam possimus magni nemo aspernatur neque deleniti aperiam assumenda, corporis cupiditate? Exercitationem illum iste, mollitia, ea accusamus ipsa corporis modi voluptate aut dolor quia quae odio beatae aperiam, est autem deserunt ad! Aut non, libero dignissimos soluta molestiae numquam eius illum veniam deleniti totam omnis quos ut quasi praesentium perspiciatis laborum dolor modi ullam nobis aspernatur, doloremque deserunt quas quo facere. Dolore aliquam voluptate, reprehenderit expedita vel odio ipsam porro eveniet a amet iste soluta saepe quidem, praesentium optio earum! Quis aperiam expedita vitae est distinctio neque nemo delectus veniam laudantium? Sint, aliquid pariatur soluta adipisci optio neque aspernatur? Quaerat, ea natus! Ut minus harum rerum tempora corrupti odit veniam asperiores perspiciatis eligendi illum quas dolorem porro saepe animi enim cumque in perferendis quibusdam ipsa, suscipit maiores vero. Assumenda vero laboriosam nulla alias ad ea ut nihil earum excepturi rerum magnam, ullam sed itaque magni aut aspernatur sit tempora perferendis repudiandae cum quibusdam delectus ipsam dolorem. Totam sint odit culpa, repellendus reiciendis rerum tempore ratione. Reprehenderit optio dolorem quod repellendus animi nihil, aliquam quos nobis expedita rerum itaque quo velit, assumenda, repellat dignissimos voluptas pariatur deleniti doloribus facilis. Incidunt quo, odio rem architecto, quam laboriosam sint aut deleniti enim facilis illo minus laudantium commodi illum, nulla perspiciatis totam perferendis exercitationem possimus sapiente. Inventore id repellat eaque illo reprehenderit natus esse adipisci ad, recusandae consequuntur dignissimos doloremque quibusdam ipsam culpa facilis asperiores minima accusamus error officiis molestias vel vero at assumenda possimus! Sunt odio, dicta ipsa quasi magnam aliquid, temporibus molestiae explicabo illo expedita nobis eum ad suscipit maiores aut nihil voluptatum! Quasi, vero eligendi nihil odit aliquid itaque ipsa. Voluptas, soluta sit. Dolorem, id, et necessitatibus a eaque maiores fuga doloribus reiciendis perferendis ad sit. Praesentium ab voluptates voluptate maiores ipsa deserunt itaque pariatur quo quia, aut repellat impedit, optio nam veniam. Quibusdam consectetur ad necessitatibus dicta incidunt neque doloribus, cumque repudiandae praesentium blanditiis vero dolorem facere rerum, enim magnam quasi quisquam iure! Atque, quia suscipit voluptate nihil culpa dolorum. Optio vero voluptate modi eaque earum dolores accusamus qui assumenda, impedit ratione odio quos saepe ipsam beatae sed veniam neque aspernatur dolor perferendis aliquam repellendus illum nisi explicabo labore. Optio quae omnis, dolorem dignissimos quas odio quam excepturi placeat, quo quos magni in, sed eos?</p>
+    <div class="container-fluid back-about ">
+        <div class="container-fluid ">
+            <p>MORE ABOUT</p>
+            <h2><strong>Get to Know Us</strong></h2>
+        </div>
     </div>
-<div class="py-5"></div>
+
+
+    <div class="py-2">
+        <div class="container  d-flex align-items-center justify-content-around p-4">
+            <div class=" triangleright shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"></div>
+            <h3 style="font-size: ; font-weight:bolder; padding:5px;"data-aos="fade-right" data-aos-duration="1000"
+                data-aos-once="false">Welcome to energrip!</h3>
+            <div class="triangleleft shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"></div>
+        </div>
+
+        <div class="container p-4">
+            <h3 style="font-size: 13px; text-align:center;  padding:5px;"data-aos="fade-right" data-aos-duration="1000"
+                data-aos-once="false">We are a team of passionate Street Workout enthusiasts on a mission to create the best
+                products for your workout sessions and bring like-minded people together from around the world! We work
+                closely with professional athletes and world champions to meticulously develop our products and provide you
+                with the finest tools to reach your goals. We're thrilled to have you join our active community and be part
+                of the global movement!</h3>
+        </div>
+    </div>
+
+
+    <div class="container-fluid py-5 my-2  aboutMedia">
+        <img src="{{ asset('images/videoAbout.webp') }}" alt="video">
+        <button id="play"><i class="fa fa-play"></i></button>
+
+        <div class="modal">
+            <div class="modal_container">
+                <i id="close"class="fas fa-times"></i>
+                <div class="iframe_container">
+                    <iframe width="853" height="480"
+                        src="https://www.youtube.com/embed/H9OckXwGESc?list=TLGGgynNg7B-pggyMjEwMjAyMw"
+                        title="GORNATION | Our Team" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="py-2">
+        <div class="container  d-flex align-items-center justify-content-around p-4">
+            <div class=" triangleright shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"></div>
+            <h3 style="font-size: ; font-weight:bolder; padding:5px;"data-aos="fade-right" data-aos-duration="1000"
+                data-aos-once="false">gallery</h3>
+            <div class="triangleleft shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"></div>
+        </div>
+    </div>
+
+    <div class="container galerie" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
+        <div class="main-img">
+            <img src="https://images.pexels.com/photos/264109/pexels-photo-264109.jpeg?cs=srgb&dl=baby-children-cute-264109.jpg&fm=jpg"
+                id="current">
+        </div>
+        <div class="images">
+            <img
+                src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?cs=srgb&dl=adorable-beautiful-boy-35537.jpg&fm=jpg">
+            <img
+                src="https://images.pexels.com/photos/708440/pexels-photo-708440.jpeg?cs=srgb&dl=beard-bonding-community-708440.jpg&fm=jpg">
+            <img
+                src="https://images.pexels.com/photos/35188/child-childrens-baby-children-s.jpg?cs=srgb&dl=boy-brother-child-35188.jpg&fm=jpg">
+            <img
+                src="https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg?cs=srgb&dl=alone-clouds-golden-hour-670720.jpg&fm=jpg">
+            <img
+                src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?cs=srgb&dl=adorable-beautiful-boy-35537.jpg&fm=jpg">
+            <img
+                src="https://images.pexels.com/photos/708440/pexels-photo-708440.jpeg?cs=srgb&dl=beard-bonding-community-708440.jpg&fm=jpg">
+            <img
+                src="https://images.pexels.com/photos/35188/child-childrens-baby-children-s.jpg?cs=srgb&dl=boy-brother-child-35188.jpg&fm=jpg">
+            <img
+                src="https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg?cs=srgb&dl=alone-clouds-golden-hour-670720.jpg&fm=jpg">
+
+        </div>
+    </div>
+
+    <div class="py-2 my-5">
+        <div class="container  d-flex align-items-center justify-content-around p-4">
+            <div class=" triangleright shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"></div>
+            <h3 style="font-size: ; font-weight:bolder; padding:5px;"data-aos="fade-right" data-aos-duration="1000"
+                data-aos-once="false">Our team</h3>
+            <div class="triangleleft shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"></div>
+        </div>
+    </div>
+
+    <div class="container d-flex team">
+        <div class="py-3 content" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
+            <p>We're a young, dynamic team of passionate athletes who want to make a difference in the world of Street Workout. At our offices in Münster, Germany, we work together every day to realize our vision. What we have in common is a love of sport, good food & a willingness to give it our all.</p>
+        </div>
+        <div class="py-3 imgTeam" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
+            <img src="{{asset('images/about1.webp')}}" alt="about1">
+        </div>
+    </div>
+
+
+    <div class="py-2 my-5">
+        <div class="container  d-flex align-items-center justify-content-around p-4">
+            <div class=" triangleright shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"></div>
+            <h3 style="font-size: ; font-weight:bolder; padding:5px;"data-aos="fade-right" data-aos-duration="1000"
+                data-aos-once="false">Our products</h3>
+            <div class="triangleleft shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false"></div>
+        </div>
+    </div>
+
+    <div class="container d-flex team">
+         <div class="py-3 imgTeam justify-content-end" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
+            <img src="{{asset('images/about2.webp')}}" alt="about1">
+        </div><div class="py-3 content" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
+            <p>The ENERGRIP story began with the fact that in 2023, there was virtually no quality sportswear available. Even today, most products are born from the desire of the community and the team to improve current products on the market or adapt them to Street Workout. That's why product development is carried out in collaboration with athletes of all levels, to offer you the best possible equipment for your training.</p>
+            <a href="/">FIND OUT NOW</a>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        /* ================ START PAGE ABOUT========================*/
+
+
+        const Play = document.querySelector('#play'),
+            Close = document.querySelector('#close'),
+            Modal = document.querySelector('.modal');
+
+        Play.addEventListener('click', () => {
+            Modal.classList.add('show');
+        });
+
+        Close.addEventListener('click', () => {
+            Modal.classList.remove('show');
+        });
+
+
+
+        /*galerie */
+        var main_img = document.querySelector('#current');
+
+        var images = document.querySelectorAll('.images img');
+
+        images.forEach(img => img.addEventListener('click', imgClick));
+
+        function imgClick(e) {
+            images.forEach(img => (img.style.opacity = 1));
+
+            main_img.classList.add('fadeIn');
+
+            setTimeout(() => main_img.classList.remove('fadeIn'), 500);
+
+            main_img.src = e.target.src;
+
+            e.target.style.opacity = 0.6;
+        }
+
+        console.log()
+
+
+        /* ================ END PAGE ABOUT========================*/
+    </script>
 @endsection

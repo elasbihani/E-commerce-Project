@@ -42,7 +42,7 @@ class CheckoutController extends Controller
         $order->state = $request->input('state');
         $order->country = $request->input('country');
         $order->pincode = $request->input('pincode');
-      
+
         $total = 0;
         $cartitems_total = Cart::where('user_id',Auth::id())->get();
         foreach ($cartitems_total as $prod) {
@@ -82,13 +82,13 @@ class CheckoutController extends Controller
             $user->city = $request->input('city');
             $user->state = $request->input('state');
             $user->country = $request->input('country');
-            $user->pincode = $request->input('pincode');   
+            $user->pincode = $request->input('pincode');
             $user->update();
         }
         $cartitems = Cart::where('user_id',Auth::id());
         Cart::destroy($cartitem);
 
-        
+
         return redirect('/')->with('status',"Order Placed successfully");
     }
 }
