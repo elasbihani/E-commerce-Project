@@ -26,7 +26,7 @@
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
         <div class="d-flex align-items-center justify-content-between w-100">
-            <h3 class="text-success mb-0">LOGO</h3>
+            <img src="{{asset("images/energrip-01.png")}}" width="76px" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
